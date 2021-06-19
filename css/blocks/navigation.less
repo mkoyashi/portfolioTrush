@@ -1,0 +1,26 @@
+// main: ../style.less
+.navigation{
+    display: flex;
+    height: 100%;
+}
+.navigation_link1,
+.navigation_link2,
+.navigation_link3,
+.navigation_link4{
+    padding: 0.66rem 2.2rem;
+    font-size: 0.93rem;
+    color:@black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    &:hover,
+    &.active
+    {
+        background-color: turquoise;
+        color: @white;
+        box-shadow: 0 0 4px fade(@black, 25%);
+    }
+    transition: background-color .2s linear, color .2s linear;
+}
